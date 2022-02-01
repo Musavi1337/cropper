@@ -36,11 +36,10 @@ file2 = open(os.environ["USERPROFILE"] + "\Desktop\cropped.txt", "w", encoding="
 
 # Strips the newline character
 for line in Lines:
-    for checks in splitStr:
-        if checks.upper() in line.upper():
+    if any(ele in line for ele in splitStr):
             file2.writelines(line)
-        else:
-            skip
+    else:
+        skip
 
 file2.close()
 file1.close()
