@@ -1,2 +1,0 @@
-# cropper
-cropper
