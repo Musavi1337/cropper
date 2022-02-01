@@ -13,7 +13,7 @@ cleanup = input("Clean up file? Y/N -")
 cleanupStr = ["@from", "@to", "died", "sirus", "maven",'elder', "%", "trade", " : "]
 if cleanup.upper() == "Y":
     file3 = open(
-        os.environ["USERPROFILE"] + "\Desktop\cleanedUptest2.txt", "w", encoding="utf8"
+        os.environ["USERPROFILE"] + "\Desktop\cleanedUp.txt", "w", encoding="utf8"
     )
     for line in Lines:
         match = 0
