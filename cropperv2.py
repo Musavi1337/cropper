@@ -1,7 +1,6 @@
 from tkinter import filedialog
 from unittest import skip
 
-
 data = [("Text Files(*.txt)", "*.txt")]
 tf = filedialog.askopenfilename(
     initialdir="C:", title="Open Text file", filetypes=(("Text Files", "*.txt"),)
